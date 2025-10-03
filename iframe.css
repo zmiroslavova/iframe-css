@@ -15,7 +15,7 @@
 
 #paymentdata input {
     box-sizing: border-box;
-    border: 0.125rem solid var(--eccos-color-text-300, #BFBFBF);
+    border: 0.125rem solid #BFBFBF;
     border-radius: 0;
     padding-top: 0.375rem;
     padding-bottom: 0.375rem;
@@ -25,5 +25,5 @@
     line-height: 1.5rem;
     font-size: 1rem;
     font-weight: 400;
-    background-color: var(--eccos-color-white, #FFFFFF);
+    background-color: #FFFFFF;
 }
