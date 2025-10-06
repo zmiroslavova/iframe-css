@@ -1,0 +1,57 @@
+@import '../../styles/basic/_html-elements.scss';
+
+#paymentdata {
+    font-family: "Gantari", Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-flow: row wrap;    
+}
+
+#paymentdata .fieldrow {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 1rem;
+    flex: 1 100%;
+}
+
+#paymentdata label {
+    width: 100%;
+    font-size: 0.938rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+#paymentdata input {
+    box-sizing: border-box;
+    border: 0.125rem solid #BFBFBF;
+    border-radius: 0;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    padding-left: 1rem;
+    width: 100%;
+    min-height: 2.5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #FFFFFF;
+}
+
+#paymentdata input.error {
+    border-color: #9C0826;
+}
+
+#paymentdata input:focus-visible {
+    position: relative;
+    z-index: 10;
+    outline: 0.125rem solid #E836E1;
+    outline-offset: 0.125rem;
+    box-shadow: 0 0 0 0.125rem #FFFFFF;
+}
+
+#paymentdata #row-expiry,
+#paymentdata #row-csv {
+    flex: 1 45%;
+}
+
+@media only screen and (max-width: 1024px) {
+    flex: 100%;
+}
