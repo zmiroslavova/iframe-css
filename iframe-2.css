@@ -48,11 +48,10 @@
 }
 
 #paymentdata #row-expiry,
-#paymentdata #row-csv {
+#paymentdata #row-cvc {
     flex: 1 25%;
     max-width: 25%;
 }
-
 
 #paymentdata #row-expiry {
     flex-flow: row wrap;
@@ -62,7 +61,6 @@
     flex: 1 40%;
     max-width: 4.063rem;
     padding: 0.125rem 1rem;
-    margin
 }
 
 #paymentdata #row-expiry #expiryYear {
@@ -71,9 +69,21 @@
 }
 
 #paymentdata #row-cvc #cvc {
+    flex: 40%;
     max-width: 4.063rem;
 }
 
-@media only screen and (max-width: 1024px) {
-    flex: 100%;
+@media only screen and (max-width: 768px) {
+    #paymentdata #row-expiry,
+    #paymentdata #row-cvc {
+        flex: 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media only screen and (max-width: 347px) {
+    #paymentdata .fieldrow {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+    }
 }
