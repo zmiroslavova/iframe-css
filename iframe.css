@@ -1,16 +1,19 @@
+@import '../../styles/basic/_html-elements.scss';
+
 #paymentdata {
     font-family: "Gantari", Arial, Helvetica, sans-serif;
     display: flex;
     flex-flow: column;
-    gap: 16px;
+    
 }
 
 #paymentdata .fieldrow {
     display: flex;
     flex-flow: column;
+    margin-bottom: 
 }
 
-#paymentdata label {
+/* #paymentdata label {
     width: 100%;
     font-size: 15px;
     font-weight: bold;
@@ -30,16 +33,16 @@
     font-size: 1rem;
     font-weight: 400;
     background-color: #FFFFFF;
-}
+} */
 
 #paymentdata input.error {
     border-color: #9C0826;
 }
 
-#paymentdata input:focus-visible {
+/* #paymentdata input:focus-visible {
     position: relative;
     z-index: 10;
     outline: 0.125rem solid #E836E1;
     outline-offset: 0.125rem;
     box-shadow: 0 0 0 0.125rem #FFFFFF;
-}
+} */
