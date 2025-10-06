@@ -1,4 +1,4 @@
-/* @import '../../styles/basic/_html-elements.scss'; */
+@import '../../styles/basic/_html-elements.scss';
 
 #paymentdata {
     font-family: "Gantari", Arial, Helvetica, sans-serif;
@@ -10,7 +10,7 @@
     display: flex;
     flex-flow: column;
     margin-bottom: 1rem;
-    flex: 1 100%;
+    flex: 1 47%;
 }
 
 #paymentdata label {
@@ -35,10 +35,6 @@
     background-color: #FFFFFF;
 }
 
-#paymentdata input.error {
-    border-color: #9C0826;
-}
-
 #paymentdata input:focus-visible {
     position: relative;
     z-index: 10;
@@ -47,11 +43,39 @@
     box-shadow: 0 0 0 0.125rem #FFFFFF;
 }
 
-#paymentdata #row-expiry,
-#paymentdata #row-csv {
-    flex: 1 45%;
+#paymentdata input.error {
+    border-color: #9C0826;
 }
 
-/* @media only screen and (max-width: 1024px) {
+#paymentdata #row-expiry,
+#paymentdata #row-csv {
+    flex: 1 25%;
+    max-width: 25%;
+}
+
+
+#paymentdata #row-expiry {
+    flex-flow: row wrap;
+}
+
+#paymentdata #row-expiry #expiryMonth {
+    flex: 1 40%;
+    max-width: 4.063rem;
+    padding: 0.125rem 1rem;
+    margin
+}
+
+#paymentdata #row-expiry #expiryYear {
+    flex: 1 60%;
+    max-width: 5rem;
+    padding: 0.125rem 1rem;
+}
+
+#paymentdata #row-cvc #cvc {
+    max-width: 4.063rem;
+    padding: 0.125rem 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
     flex: 100%;
-} */
+}
